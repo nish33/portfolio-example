@@ -144,3 +144,35 @@ header {
 .section-description span {
     width: 50%;
 }
+#about-content-wrapper {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 45%;
+    position: relative;
+}
+
+
+.about-content-icon {
+    position: absolute;
+    font-size: 3rem;
+    z-index: -1;
+    color: #dadada;
+    left: -2rem;
+}
+
+.about-content-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
