@@ -177,6 +177,10 @@ header {
     text-transform: uppercase;
 }
 
+#skills-section {
+    height: auto;
+}
+
 #skills-content {
     display: flex;
     flex-direction: column;
@@ -216,4 +220,92 @@ header {
 
 .skill-icon {
     font-size: 3rem;
+}
+
+#portfolio-section {
+    position: relative;
+}
+
+#portfolio-section .section-title {
+    background-image: url(../img/portfolio-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 8rem;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio-section .section-title span {
+    border-color: #ffffff;
+}
+
+#portfolio-options {
+    background: #313131;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio-options .portfolio-option {
+    width: 10rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid #919191;
+    text-align: center;
+    color: #919191;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#portfolio-options .portfolio-option.active {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.portfolio-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.portfolio-content-project {
+    width: 33%;
+    position: relative;
+}
+
+.portfolio-content-project:hover .portfolio-content-project-text {
+    display: flex;
+}
+
+.portfolio-content-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.portfolio-content-project-text {
+    background: #00000068;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    color: #ffffff;
+}
+
+.portfolio-content-project-category {
+    font-style: italic;
+}
+
+.portfolio-content-project-title {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
