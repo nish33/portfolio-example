@@ -68,7 +68,6 @@ header {
 }
 
 .page-section {
-    height: 90vh;
     padding: 4rem 0;
 }
 
@@ -268,6 +267,8 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 0.25rem;
     overflow: hidden;
 }
 
@@ -308,4 +309,49 @@ header {
 .portfolio-content-project-title {
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+#contact-form input:not([type="submit"]), #contact-form textarea {
+    width: 30rem;
+    border-width: 0 0 4px 4px;
+    border-style: solid;
+    border-color: #000000;
+    padding: 1rem;
+    font: inherit;
+    background: transparent;
+}
+
+#contact-form input[type= "submit"] {
+    max-width: max-content;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+#back-to-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
 }
