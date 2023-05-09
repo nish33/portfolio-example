@@ -113,12 +113,12 @@ header {
 
 #banner-image {
     height: 100%;
-    padding: 6rem;
+    padding: 2rem;
 }
 
 #banner-image img {
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .section-title {
@@ -354,4 +354,17 @@ footer {
     flex-direction: column;
     align-items: center;
     row-gap: 0.5rem;
+}
+
+@media screen and (max-width: 560px) {
+    header {
+        position: sticky;
+        top: 0;
+        background: #919191;
+    }
+    #banner {
+        flex-direction: column;
+        background: transparent;
+        height: auto;
+    }
 }
