@@ -272,6 +272,10 @@ header {
     overflow: hidden;
 }
 
+#portfolio-coded, #portfolio-ongoing {
+    display: none;
+}
+
 .portfolio-content-project {
     width: 33%;
     position: relative;
